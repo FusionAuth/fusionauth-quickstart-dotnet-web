@@ -43,9 +43,9 @@ To run the application:
 * Endure the FusionAuth server is running as noted above or update the applicationsettings.json to reflect the FusionAuth server you are using.
 
 ```
-cd complete-app
+cd complete-application
 dotnet publish -r osx-x64
-bin/Debug/net7.0/osx-x64/publish/SetupDotnet
+bin/Debug/net7.0/osx-x64/publish/complete-application
 ```
 
 Now vist the .Net app at [http://localhost:5000](http://localhost:5000)
@@ -57,7 +57,7 @@ Visit https://fusionauth.io/docs/quickstarts/quickstart-dotnet-web for a step by
 
 ### Troubleshooting
 
-* I get `This site can’t be reached  localhost refused to connect.` when I click the Login button
+* I get `This site can’t be reached localhost refused to connect.` when I click the Login button
 
 Ensure FusionAuth is running in the Docker container.  You should be able to login as the admin user, `admin@example.com` with the password of `password` at http://localhost:9011/admin
 
