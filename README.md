@@ -45,7 +45,7 @@ To run the application:
 ```
 cd complete-application
 dotnet publish -r osx-x64
-bin/Debug/net7.0/osx-x64/publish/complete-application
+dotnet run
 ```
 
 Now vist the .Net app at [http://localhost:5000](http://localhost:5000)
