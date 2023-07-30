@@ -6,12 +6,6 @@ startup.ConfigureServices(builder.Services);
 
 var app = builder.Build();
 
-//app.Use((context, next) =>
-//{
-//    context.Request.Scheme = "http";
-//    return next(context);
-//});
-
 // Add this before any other middleware that might write cookies
 app.UseCookiePolicy();
 
