@@ -9,9 +9,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace complete_application.Pages
 {
+    // tag::authorize[]
     [Authorize]
     public class MakeChangeModel : PageModel
     {
+    // end::authorize[]
         public string Message { get; private set; } = "";
         public bool Error { get; private set; } = false;
         public string Amount { get; set; } = "0.00";
