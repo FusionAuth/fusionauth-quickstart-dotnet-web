@@ -34,10 +34,8 @@ namespace complete_applicaiton
                 .AddOpenIdConnect("oidc", options =>
                 {
                     options.Authority = Configuration["complete_application:Authority"];
-
                     options.ClientId = Configuration["complete_application:ClientId"];
                     options.ClientSecret = Configuration["complete_application:ClientSecret"];
-
                     options.ResponseType = "code";
                     options.RequireHttpsMetadata = false;
                 });
