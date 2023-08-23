@@ -17,10 +17,10 @@ namespace Pages
         public IActionResult OnGet()
         {
             SignOut("cookie", "oidc");
-            var host = _configuration["complete_application:Authority"];
-            var cookieName = _configuration["complete_application:CookieName"];
+            var host = _configuration["FusionAuthSettings:Authority"];
+            var cookieName = _configuration["FusionAuthSettings:CookieName"];
 
-            var clientId = _configuration["complete_application:ClientId"];
+            var clientId = _configuration["FusionAuthSettings:ClientId"];
             var url = host + "/oauth2/logout?client_id=" + clientId;
             Response.Cookies.Delete(cookieName);
             return Redirect(url);
