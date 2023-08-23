@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace complete_application.Pages
+namespace Pages
 {
     // tag::authorize[]
     [Authorize]

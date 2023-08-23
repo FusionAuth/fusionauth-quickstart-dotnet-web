@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Authorization;
 
-namespace complete_application.Pages;
+namespace Pages;
 
 [Authorize]
 public class AccountsModel : PageModel
