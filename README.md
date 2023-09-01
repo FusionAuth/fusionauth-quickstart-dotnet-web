@@ -1,17 +1,17 @@
-# Quickstart: .Net app with FusionAuth
+# Quickstart: .NET app with FusionAuth
 
-This repository contains a .Net app that works with a locally running instance of [FusionAuth](https://fusionauth.io/), the authentication and authorization platform.
+This repository contains a .NET app that works with a locally running instance of [FusionAuth](https://fusionauth.io/), the authentication and authorization platform.
 
 ## Setup
 
 ### Prerequisites
-- [.Net](https://dotnet.microsoft.com/en-us/download): This in the needed framework to run .Net applications.
+- [.NET](https://dotnet.microsoft.com/en-us/download): This in the needed framework to run .NET applications.
 - [Docker](https://www.docker.com): The quickest way to stand up FusionAuth.
   - (Alternatively, you can [Install FusionAuth Manually](https://fusionauth.io/docs/v1/tech/installation-guide/)).
 - [Visual Stuido Code](https://code.visualstudio.com/download): The editor for making changes to code.
   - Alternatively, You can user other editors as well.
 
-This app has been tested with .Net 7.0.7
+This app has been tested with .NET 7.0.7
 
 ### FusionAuth Installation via Docker
 
@@ -35,9 +35,9 @@ FusionAuth will be initially configured with these settings:
 
 You can log into the [FusionAuth admin UI](http://localhost:9011/admin) and look around if you want, but with Docker/Kickstart you don't need to.
 
-### .Net complete-app
+### .NET complete-app
 
-The `complete-app` directory contains a minimal .Net app configured to authenticate with locally running FusionAuth.
+The `complete-app` directory contains a minimal .NET app configured to authenticate with locally running FusionAuth.
 
 To run the application:
 * Endure the FusionAuth server is running as noted above or update the applicationsettings.json to reflect the FusionAuth server you are using.
@@ -48,12 +48,12 @@ dotnet publish -r osx-x64
 dotnet run
 ```
 
-Now vist the .Net app at [http://localhost:5000](http://localhost:5000)
+Now vist the .NET app at [http://localhost:5000](http://localhost:5000)
 You can login with a user preconfigured during Kickstart, `richard@example.com` with the password of `password`.
 
 ### Further Information
 
-Visit https://fusionauth.io/docs/quickstarts/quickstart-dotnet-web for a step by step guide on how to build this .Net app integrated with FusionAuth by scratch.
+Visit https://fusionauth.io/docs/quickstarts/quickstart-dotnet-web for a step by step guide on how to build this .NET app integrated with FusionAuth by scratch.
 
 ### Troubleshooting
 
