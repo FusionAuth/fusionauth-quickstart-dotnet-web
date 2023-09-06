@@ -44,7 +44,6 @@ To run the application:
 
 ```
 cd complete-application
-dotnet publish -r osx-x64
 dotnet run
 ```
 
