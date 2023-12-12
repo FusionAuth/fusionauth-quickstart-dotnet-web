@@ -48,7 +48,9 @@
             "enabledGrants": [
               "authorization_code",
               "refresh_token"
-            ]
+            ],
+            "generateRefreshTokens": true,
+            "requireRegistration": true
           },
           "jwtConfiguration": {
             "enabled": true,
