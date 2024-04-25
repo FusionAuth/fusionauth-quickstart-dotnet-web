@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.IdentityModel.Logging;
@@ -37,6 +38,7 @@ public class Startup
                 options.ClientSecret = Configuration["FusionAuthSettings:ClientSecret"];
                 options.ResponseType = "code";
                 options.RequireHttpsMetadata = false;
+                options.Scope.Add("email");
             });
 
         services.Configure<CookiePolicyOptions>(options =>
